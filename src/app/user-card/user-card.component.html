@@ -1,0 +1,18 @@
+<!-- user-card.component.html -->
+<div *ngFor="let user of userData">
+    <mat-card class="user-card">
+        <div class="card-content">
+            <div class="left-side">
+                <div class="user-name">{{user.userName}}</div>
+                <div class="user-count">{{user.userCount }}</div>
+            </div>
+            <div class="right-side">
+                <img [src]="'assets/images/' + user.userImage" alt="User Image" class="user-image">
+            </div>
+        </div>
+        <div class="card-footer">
+            <img [src]="user.persentIcon ? 'assets/images/up.svg' : 'assets/images/down.svg'">
+            <p class="card-data"><span class="per">{{user.persent}}%</span>{{user.longText}}</p>
+        </div>
+    </mat-card>
+</div>

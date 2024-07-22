@@ -1,0 +1,129 @@
+/* home.component.css */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+}
+
+.page-title {
+  margin-left: 8px;
+  font-size: 14px;
+  font-weight: 500;
+
+  span {
+    color: #7242FF;
+  }
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+}
+
+.create-button {
+  background-color: #7242FF;
+  color: white;
+  padding: 10px 40px;
+  border-radius: 25px;
+  border: none;
+}
+
+.create-button:hover {
+  background-color: #5A33CC;
+}
+
+/* dashboard.component.css */
+.containerMain {
+  background-color: #ffffff;
+  border-radius: 10px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+  }
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+}
+
+.back-button {
+  background-color: #7242FF;
+  color: white;
+  border-radius: 50%;
+  margin-right: 16px;
+  border: none;
+  height: 40px;
+  width: 40px;
+  font-size: 25px;
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.subheading {
+  font-size: 16px;
+  color: gray;
+  margin: 0;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+
+  .calendar {
+    color: white;
+    background-color: #7242FF;
+    height: auto;
+    width: auto;
+    border-radius: 10px;
+    padding: 8px
+  }
+}
+
+mat-icon {
+  margin-right: 16px;
+  color: gray;
+}
+
+.tabs {
+  background-color: #7242FF;
+  padding: 5px 10px;
+  border-radius: 10px;
+
+  mat-tab {
+    padding: 5px;
+  }
+}
+
+.mdc-tab__text-label {
+  color: white !important;
+}
+
+.mat-mdc-tab.mdc-tab--active .mdc-tab__text-label {
+  color: #ffffff !important;
+}
+
+.cards {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 15px 0px;
+}

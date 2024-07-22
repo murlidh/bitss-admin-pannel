@@ -1,0 +1,85 @@
+<div class="d-flex flex-column sidebar bg-white" [class.open]="isOpen" [class.minimized]="!isOpen">
+    <div class="p-3 d-flex justify-content-between align-items-center logo">
+        <div class="d-flex align-items-center">
+            <img src="assets/images/logo.png" alt="Logo" class="img-fluid me-2">
+            <span *ngIf="isOpen" class="company-name">Freekey.ai</span>
+        </div>
+        <button class="btn btn-link text-decoration-none text-primary p-0" (click)="toggleSidebar()">
+            <img src="assets/images/hamIcon.svg" class="fas"
+                [ngClass]="{'fa-chevron-left': isOpen, 'fa-chevron-right': !isOpen}">
+        </button>
+    </div>
+    <div class="p-3 user-info d-flex align-items-center">
+        <img src="data:image/png;base64,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"
+            alt="User" class="rounded-circle me-2 user-pic">
+        <div class="company-info">
+            <span class="company-name" *ngIf="isOpen">Company Name</span>
+            <span class="company-loc" *ngIf="isOpen">India</span>
+        </div>
+
+    </div>
+    <nav class="flex-grow-1">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link text-primary" [class.active]="selectedMenu === 'dashboard'"
+                    (click)="selectMenu('dashboard')" href="#">
+                    <img src="assets/images/dashboard.svg" class="me-4"> <span *ngIf="isOpen">Dashboard</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-primary" [class.active]="selectedMenu === 'create'"
+                    (click)="toggleSubmenu('about')" href="#">
+                    <img src="assets/images/create.svg" class="me-4"> <span *ngIf="isOpen">create</span> <i
+                        class="fas fa-chevron-down float-end" *ngIf="isOpen"></i>
+                </a>
+                <ul class="nav flex-column ms-3 sub-menu" [class.open]="submenus['about']">
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="#">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="#">Company</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-primary" [class.active]="selectedMenu === 'bank'"
+                    (click)="toggleSubmenu('services')" href="#">
+                    <img src="assets/images/bank.svg" class="me-4"> <span *ngIf="isOpen">Bank</span> <i
+                        class="fas fa-chevron-down float-end" *ngIf="isOpen"></i>
+                </a>
+                <ul class="nav flex-column ms-3 sub-menu" [class.open]="submenus['services']">
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="#">Consulting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="#">Support</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-primary" [class.active]="selectedMenu === 'master'"
+                    (click)="selectMenu('master')" href="#">
+                    <img src="assets/images/master.svg" class="me-4"> <span *ngIf="isOpen">Master</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-primary" [class.active]="selectedMenu === 'setting'"
+                    (click)="selectMenu('setting')" href="#">
+                    <img src="assets/images/setting.svg" class="me-4"> <span *ngIf="isOpen">Setting</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-primary" [class.active]="selectedMenu === 'export'"
+                    (click)="selectMenu('export')" href="#">
+                    <img src="assets/images/report.svg" class="me-4"> <span *ngIf="isOpen">Export sets</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-primary" [class.active]="selectedMenu === 'report'"
+                    (click)="selectMenu('report')" href="#">
+                    <img src="assets/images/report.svg" class="me-4"> <span *ngIf="isOpen">Report</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>

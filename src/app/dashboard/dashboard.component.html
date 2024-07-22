@@ -1,0 +1,40 @@
+<!-- home.component.html -->
+<div class="container">
+    <div class="left-side">
+        <mat-icon>home</mat-icon>
+        <span class="page-title">Page Name / <span>Subpage Name</span></span>
+    </div>
+    <div class="right-side">
+        <button mat-raised-button class="create-button">Create New Question</button>
+    </div>
+</div>
+<!-- dashboard.component.html -->
+<div class="containerMain">
+    <div class="header">
+        <div class="left-side">
+            <button class="back-button"><</button>
+            <div class="titles">
+                <h1 class="page-title">Page Name</h1>
+                <h2 class="subheading">Subheading</h2>
+            </div>
+        </div>
+        <div class="right-side">
+            <mat-icon class="calendar">calendar_today</mat-icon>
+            <mat-tab-group class="tabs">
+                <mat-tab label="All"></mat-tab>
+                <mat-tab label="Today"></mat-tab>
+                <mat-tab label="Week"></mat-tab>
+                <mat-tab label="Month"></mat-tab>
+            </mat-tab-group>
+        </div>
+    </div>
+    <app-user-card [userData]="userData" class="cards"></app-user-card>
+    <div class="row">
+        <div class="col-3">
+            <app-user-list></app-user-list>
+        </div>
+        <div class="col-6">
+            <app-user-section></app-user-section>
+        </div>
+    </div>
+</div>

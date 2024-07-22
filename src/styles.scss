@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mdc-tab-indicator--active {
+    color: black;
+    background-color: white !important;
+    border-radius: 5px;
+    border: none !important;
+}
+
+.mat-mdc-tab.mdc-tab-indicator--active  .mdc-tab__text-label{
+    color: black !important;
+}
+
+.mat-mdc-tab .mdc-tab__text-label {
+    color: white !important;
+}
+
+.mat-mdc-tab-header {
+    --mdc-tab-indicator-active-indicator-shape: 0px;
+}

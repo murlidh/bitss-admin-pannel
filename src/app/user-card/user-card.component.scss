@@ -1,0 +1,64 @@
+/* user-card.component.css */
+.user-card {
+    max-width: 300px;
+    padding: 20px;
+    box-shadow: 5px 0px 8px #888888;
+    border-radius: 10px;
+
+  }
+  
+  .card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .user-name {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  .user-count {
+    font-size: 30px;
+    color: black;
+    font-weight: 700;
+  }
+  
+  .right-side {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-image {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .card-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    margin: auto;
+    margin-top: 50px;
+  }
+  
+  .long-text {
+    margin-left: 8px;
+    color: gray;
+  }
+  
+  .card-data {
+    margin: 0 !important;
+
+    .per {
+        color: #00B69B;
+    }
+  }

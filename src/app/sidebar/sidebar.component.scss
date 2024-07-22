@@ -1,0 +1,69 @@
+.sidebar {
+    height: 100%;
+    width: 250px;
+    transition: width 0.3s;
+    background-color: white;
+    color: #3102B9;
+  }
+  
+  .sidebar.minimized {
+    width: 80px;
+  }
+  
+  .sidebar .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sidebar .logo img {
+    width: 40px;
+  }
+  
+  .sidebar .user-info .user-pic {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .sub-menu {
+    display: none;
+  }
+  
+  .sub-menu.open {
+    display: block;
+  }
+
+  .nav {
+    gap:10px;
+  }
+
+  .company-info span {
+    display: block;
+  }
+
+  .company-name {
+    font-weight: 600;
+  }
+
+  .company-loc {
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .nav-link.active {
+    background-color: #f0f0f0;
+    font-weight: bold;
+  }
+
+  .text-primary {
+    color: #3102B9 !important;
+    font-weight: 700;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+  }
+  

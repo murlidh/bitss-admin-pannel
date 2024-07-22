@@ -1,0 +1,29 @@
+
+.content {
+  margin-left: 250px; /* Adjust according to sidebar width */
+  margin-top: 56px; /* Height of the top bar */
+  padding: 16px;
+  transition: margin-left 0.3s;
+  background-color: #F5F1FF;
+}
+
+.sidebar.minimized ~ .content {
+  margin-left: 80px; /* Adjust margin for minimized sidebar */
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    margin-left: 0; /* Reset margin for smaller screens */
+  }
+}
+
+.main {
+  display: flex;
+  margin-left: 0!important;
+  margin-right: 0!important;
+  .main-content {
+    background-color: #F5F1FF;
+    position: relative;
+    top: 73px;
+  }
+}

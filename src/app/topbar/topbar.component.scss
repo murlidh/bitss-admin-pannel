@@ -1,0 +1,24 @@
+.navbar {
+    position: fixed;
+    width: calc(100% - 280px); /* Adjust according to sidebar width */
+    margin-left: 250px;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar .user-pic {
+    width: 40px;
+    height: 40px;
+  }
+
+  .user-name {
+    font-weight: 600;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .navbar {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  
